@@ -29,5 +29,5 @@ icon: (output) =>
 
 style: """
   top: 5px
-  right: 256px
+  right: 224px
 """

@@ -15,5 +15,5 @@ update: (output, el) ->
 
 style: """
   top: 5px
-  right: 336px
+  right: 296px
 """

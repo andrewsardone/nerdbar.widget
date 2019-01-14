@@ -93,7 +93,7 @@ theme.coffee and focused-window.coffee do the reloading every 1s.
 }
 
 span.active {
-  color: #1c1c1c;
+  color: black;
   background-color: #72bef2;
 }
 
