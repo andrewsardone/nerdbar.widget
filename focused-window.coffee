@@ -60,5 +60,5 @@ construct_style: (bg, c1) ->
   """
 
 style: """
-  left: 10px
+  left: 16px
 """

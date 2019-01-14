@@ -14,6 +14,6 @@ update: (output, el) ->
   $(".cal span:first-child", el).text("  #{output}")
 
 style: """
-  top: 6px
-  right: 93px
+  top: 4px
+  right: 128px
 """

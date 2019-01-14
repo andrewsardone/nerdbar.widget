@@ -14,6 +14,6 @@ update: (output, el) ->
   $(".time span:first-child", el).text("  #{output}")
 
 style: """
-  top: 6px
-  right: 10px
+  top: 4px
+  right: 16px
 """

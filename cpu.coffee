@@ -14,6 +14,6 @@ update: (output, el) ->
   $(".cpu span:first-child", el).text("  #{output}")
 
 style: """
-  top: 7px
-  right: 298px
+  top: 5px
+  right: 416px
 """

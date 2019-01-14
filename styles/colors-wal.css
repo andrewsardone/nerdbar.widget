@@ -2,4 +2,6 @@
   --color1: #e3e5e9;
   --background: #1c1c1c;
   --fontFamily: 'Iosevka Term';
+  --fontSize: 14px;
+  --topOffset: -2px;
 }

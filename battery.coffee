@@ -28,9 +28,6 @@ icon: (output) =>
     "fa-battery-empty"
 
 style: """
-  .battery
-    font-size: 12px
-  
-  top: 7px
-  right: 185px
+  top: 5px
+  right: 256px
 """

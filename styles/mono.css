@@ -20,17 +20,17 @@ theme.coffee and focused-window.coffee do the reloading every 1s.
   /* note - can't use opacity with divdiv, since it affects things weirdly */
 
   font-family: var(--fontFamily) !important;
-  font-size: 12px;
+  font-size: var(--fontSize);
   font-weight: 500;
   webkit-font-smoothing: antialiased;
+
+  top: var(--topOffset);
 }
 
 .battery {
-  font-size: 12px;
 }
 
 .cpu, .mem {
-  font-size: 12px;
 }
 
 /* todo? consolidate `style`s? this doesn't seem high priority */
