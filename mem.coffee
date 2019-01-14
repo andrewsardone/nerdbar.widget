@@ -14,6 +14,6 @@ update: (output, el) ->
   $(".mem span:first-child", el).text("  #{output}")
 
 style: """
-  top: 5px
+  top: 3px
   right: 296px
 """

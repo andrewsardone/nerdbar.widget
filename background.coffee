@@ -13,7 +13,7 @@ style: """
   /* todo - maybe this stuff will go in body */
   top: 0
   left: 0
-  height: 28px
+  height: 24px
   width: 100%
   z-index: -1
 """
