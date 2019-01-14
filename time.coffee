@@ -4,7 +4,7 @@ refreshFrequency: 1000 # ms
 
 render: (output) ->
   """
-  <div class="time"
+  <div class="time">
     <span></span>
     <span class="icon fa fa-clock-o"></span>
   </div>

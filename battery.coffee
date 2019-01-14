@@ -4,7 +4,7 @@ refreshFrequency: 15000 # ms
 
 render: (output) ->
   """
-  <div class="battery"
+  <div class="battery">
     <span></span>
     <span class="icon fa fa-battery-empty"></span>
   </div>
@@ -32,5 +32,5 @@ style: """
     font-size: 12px
   
   top: 7px
-  right: 195px
+  right: 185px
 """

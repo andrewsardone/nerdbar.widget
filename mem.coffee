@@ -4,7 +4,7 @@ refreshFrequency: 30000 # ms
 
 render: (output) ->
   """
-  <div class="mem"
+  <div class="mem">
     <span></span>
     <span class="icon fa fa-hdd-o"></span>
   </div>
@@ -15,5 +15,5 @@ update: (output, el) ->
 
 style: """
   top: 7px
-  right: 268px
+  right: 242px
 """

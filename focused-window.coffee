@@ -13,9 +13,8 @@ refreshFrequency: 1000 # ms
 
 render: ( ) ->
   """
-  <div class="foc"
+  <div class="foc">
     <span></span>
-    <span class="icon fa fa-bars"></span>
   </div>
   """
 
@@ -29,7 +28,7 @@ update: (output, el) ->
   [mode, spaces, focused...] = output.split '|'
   spaces = (@format_active space, new_style for space in (spaces.split ' ')).join('')
   focused = @trunc_focused focused.join('|'), 60
-  rendered = ["<span>#{mode}</span>", spaces, "<span class=\"focused\">#{focused}</span>"].join('|')
+  rendered = [spaces, "<span class=\"focused\">#{focused}</span>"].join('|')
   $(".foc span:first-child", el).html("  #{rendered}")
 
 # truncates focused window title if too long
@@ -45,7 +44,7 @@ format_active: (elem, active_style) ->
   else
     if elem[0] is "("
       elem = elem[1...-1]
-      elem = """<span class="list active" #{active_style}>#{elem}</span>"""
+      elem = """<span class="list active">#{elem}</span>"""
     else
       elem = """<span class="list inactive">#{elem}</span>"""
     return elem

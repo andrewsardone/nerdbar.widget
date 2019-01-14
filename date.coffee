@@ -4,7 +4,7 @@ refreshFrequency: 10000
 
 render: (output) ->
   """
-  <div class="cal"
+  <div class="cal">
     <span></span>
     <span class="icon fa fa-calendar"></span>
   </div>

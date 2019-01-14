@@ -4,7 +4,7 @@ refreshFrequency: 2000 # ms
 
 render: (output) ->
   """
-  <div class="cpu"
+  <div class="cpu">
     <span></span>
     <span class="icon fa fa-bar-chart"></span>
   </div>
@@ -15,5 +15,5 @@ update: (output, el) ->
 
 style: """
   top: 7px
-  right: 315px
+  right: 298px
 """

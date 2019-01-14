@@ -12,15 +12,16 @@ theme.coffee and focused-window.coffee do the reloading every 1s.
 }
 
 /*#__uebersicht div {*/
-*[id*='amar-bar-widget'] {
+*[id^='amar-bar-widget'] {
 /*div div {*/
   color: var(--c1);
   background-color: var(--bg);
 
   /* note - can't use opacity with divdiv, since it affects things weirdly */
 
-  font-family: 'Inconsolata';
-  font-size: 13px;
+  font-family: var(--fontFamily) !important;
+  font-size: 12px;
+  font-weight: 500;
   webkit-font-smoothing: antialiased;
 }
 
@@ -29,7 +30,7 @@ theme.coffee and focused-window.coffee do the reloading every 1s.
 }
 
 .cpu, .mem {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /* todo? consolidate `style`s? this doesn't seem high priority */
@@ -86,7 +87,14 @@ theme.coffee and focused-window.coffee do the reloading every 1s.
 }
 
 .focused {
-  font-size: 11px;
+  /* font-size: 11px; */
+  color: #d291e4;
+  font-weight: 600;
+}
+
+span.active {
+  color: #1c1c1c;
+  background-color: #72bef2;
 }
 
 span .list {
