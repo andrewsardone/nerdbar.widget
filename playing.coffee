@@ -4,8 +4,8 @@ refreshFrequency: 1000 # ms
 render: (output) ->
   """
   <div class="np">
-    <span></span>
     <span class="icon fa fa-music"></span>
+    <span></span>
   </div>
   """
 
@@ -14,16 +14,17 @@ update: (output, el) ->
     # artist = data.recenttracks.track[0].artist["#text"]
     # song = data.recenttracks.track[0].name
     # output = "#{song} - #{artist}"
-    $(".np span:first-child", el).text("  #{output}")
+    $(".np span:last-child", el).text("  #{output}")
 
 style: """
   top: 4px
   left: 25%
-  height: 16px
   width: 50%
 
   text-align: center
 
   overflow: hidden
   text-overflow: ellipsis
+
+  color: #8a8a8a
 """
