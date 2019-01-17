@@ -1,4 +1,10 @@
 #!/bin/bash
+
+if [ "$(ps aux | grep Spotify.app | grep -v grep | wc -l)" -lt 1 ]; then
+  echo "@@not running@@"
+  exit 0
+fi
+
 RESULTX="$(/usr/local/bin/spotify status 2>/dev/null; echo x)"
 RESULT="${RESULTX%x}"
 

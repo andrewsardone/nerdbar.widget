@@ -14,7 +14,11 @@ update: (output, el) ->
     # artist = data.recenttracks.track[0].artist["#text"]
     # song = data.recenttracks.track[0].name
     # output = "#{song} - #{artist}"
-    $(".np span:last-child", el).text("  #{output}")
+    if output.includes("@@not running@@")
+      $(".np", el).hide()
+    else
+      $(".np", el).show()
+      $(".np span:last-child", el).text("  #{output}")
 
 style: """
   top: 4px
